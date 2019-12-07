@@ -82,7 +82,7 @@ class LoginPage extends StatelessWidget {
             icon: Icon( Icons.alternate_email, color: Colors.deepPurple ),
             hintText: 'ejemplo@correo.com',
             labelText: 'Correo electrónico',
-            counterText: snapshot.data,
+            //counterText: snapshot.data,
             errorText: snapshot.error
           ),
           onChanged: bloc.changeEmail,
@@ -111,7 +111,7 @@ class LoginPage extends StatelessWidget {
             decoration: InputDecoration(
               icon: Icon( Icons.lock_outline, color: Colors.deepPurple ),
               labelText: 'Contraseña',
-              counterText: snapshot.data,
+              //counterText: snapshot.data,
               errorText: snapshot.error
             ),
             onChanged: bloc.changePassword,
@@ -206,7 +206,7 @@ class LoginPage extends StatelessWidget {
             children: <Widget>[
               Icon( Icons.person_pin, color: Colors.white, size: 100.0 ),
               SizedBox( height: 10.0, width: double.infinity ),
-              Text('Login Yikyik', style: TextStyle( color: Colors.white, fontSize: 25.0 ))
+              Text('Login', style: TextStyle( color: Colors.white, fontSize: 25.0 ))
             ],
           ),
         )
